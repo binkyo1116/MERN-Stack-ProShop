@@ -1,698 +1,96 @@
-Contribution: 2018-03-09 20:00
+# ProShop MernStack web Application
 
-Contribution: 2018-03-09 20:01
+> eCommerce platform built with the MERN stack & Redux.
 
-Contribution: 2018-03-09 20:02
+# Live Preview Project
+[View Project Demo](https://aliahmadshop.herokuapp.com/)
 
-Contribution: 2018-03-09 20:03
+## Features
 
-Contribution: 2018-03-09 20:04
+- Full featured shopping cart
+- Product reviews and ratings
+- Top products carousel
+- Product pagination
+- Product search feature
+- User profile with orders
+- Admin product management
+- Admin user management
+- Admin Order details page
+- Mark orders as delivered option
+- Checkout process (shipping, payment method, etc)
+- PayPal / credit card integration
+- Database seeder (products & users)
 
-Contribution: 2018-03-09 20:05
+## Usage
 
-Contribution: 2018-03-12 20:00
+### ES Modules in Node
 
-Contribution: 2018-03-12 20:01
+We use ECMAScript Modules in the backend in this project. Be sure to have at least Node v14.6+ or you will need to add the "--experimental-modules" flag.
 
-Contribution: 2018-03-12 20:02
+Also, when importing a file (not a package), be sure to add .js at the end or you will get a "module not found" error
 
-Contribution: 2018-03-12 20:03
+You can also install and setup Babel if you would like
 
-Contribution: 2018-03-16 20:00
+### Env Variables
 
-Contribution: 2018-03-16 20:01
+Create a .env file in then root and add the following
 
-Contribution: 2018-03-16 20:02
+```
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = your mongodb uri
+JWT_SECRET = 'abc123'
+PAYPAL_CLIENT_ID = your paypal client id
+```
 
-Contribution: 2018-03-16 20:03
+### Install Dependencies (frontend & backend)
 
-Contribution: 2018-03-16 20:04
+```
+npm install
+cd frontend
+npm install
+```
 
-Contribution: 2018-03-16 20:05
+### Run
 
-Contribution: 2018-03-22 20:00
+```
+# Run frontend (:3000) & backend (:5000)
+npm run dev
 
-Contribution: 2018-03-22 20:01
+# Run backend only
+npm run server
+```
 
-Contribution: 2018-03-22 20:02
+## Build & Deploy
 
-Contribution: 2018-03-22 20:03
+```
+# Create frontend prod build
+cd frontend
+npm run build
+```
 
-Contribution: 2018-03-22 20:04
+There is a Heroku postbuild script, so if you push to Heroku, no need to build manually for deployment to Heroku
 
-Contribution: 2018-03-22 20:05
+### Seed  Database
 
-Contribution: 2018-03-22 20:06
+You can use the following commands to seed the database with some sample users and products as well as destroy all data
 
-Contribution: 2018-03-22 20:07
+```
+# Import data
+npm run data:import
 
-Contribution: 2018-03-23 20:00
+# Destroy data
+npm run data:destroy
+```
 
-Contribution: 2018-03-23 20:01
+```
+Sample User Logins
 
-Contribution: 2018-03-24 20:00
+admin@example.com (Admin)
+123456
 
-Contribution: 2018-03-24 20:01
+ali@example.com (Customer)
+123456
 
-Contribution: 2018-03-24 20:02
-
-Contribution: 2018-03-24 20:03
-
-Contribution: 2018-03-24 20:04
-
-Contribution: 2018-03-24 20:05
-
-Contribution: 2018-03-24 20:06
-
-Contribution: 2018-03-24 20:07
-
-Contribution: 2018-04-03 20:00
-
-Contribution: 2018-04-03 20:01
-
-Contribution: 2018-04-03 20:02
-
-Contribution: 2018-04-03 20:03
-
-Contribution: 2018-04-03 20:04
-
-Contribution: 2018-04-03 20:05
-
-Contribution: 2018-04-06 20:00
-
-Contribution: 2018-04-06 20:01
-
-Contribution: 2018-04-06 20:02
-
-Contribution: 2018-04-06 20:03
-
-Contribution: 2018-04-06 20:04
-
-Contribution: 2018-04-06 20:05
-
-Contribution: 2018-04-06 20:06
-
-Contribution: 2018-04-06 20:07
-
-Contribution: 2018-04-12 20:00
-
-Contribution: 2018-04-12 20:01
-
-Contribution: 2018-04-12 20:02
-
-Contribution: 2018-04-15 20:00
-
-Contribution: 2018-04-15 20:01
-
-Contribution: 2018-04-15 20:02
-
-Contribution: 2018-04-15 20:03
-
-Contribution: 2018-04-19 20:00
-
-Contribution: 2018-04-19 20:01
-
-Contribution: 2018-04-19 20:02
-
-Contribution: 2018-04-19 20:03
-
-Contribution: 2018-04-19 20:04
-
-Contribution: 2018-04-20 20:00
-
-Contribution: 2018-04-20 20:01
-
-Contribution: 2018-04-20 20:02
-
-Contribution: 2018-05-09 20:00
-
-Contribution: 2018-05-09 20:01
-
-Contribution: 2018-05-14 20:00
-
-Contribution: 2018-05-14 20:01
-
-Contribution: 2018-05-14 20:02
-
-Contribution: 2018-05-14 20:03
-
-Contribution: 2018-05-14 20:04
-
-Contribution: 2018-05-14 20:05
-
-Contribution: 2018-05-14 20:06
-
-Contribution: 2018-05-14 20:07
-
-Contribution: 2018-05-14 20:08
-
-Contribution: 2018-05-15 20:00
-
-Contribution: 2018-05-15 20:01
-
-Contribution: 2018-05-15 20:02
-
-Contribution: 2018-05-22 20:00
-
-Contribution: 2018-05-22 20:01
-
-Contribution: 2018-05-27 20:00
-
-Contribution: 2018-05-27 20:01
-
-Contribution: 2018-05-29 20:00
-
-Contribution: 2018-05-29 20:01
-
-Contribution: 2018-05-29 20:02
-
-Contribution: 2018-05-29 20:03
-
-Contribution: 2018-05-29 20:04
-
-Contribution: 2018-05-29 20:05
-
-Contribution: 2018-05-29 20:06
-
-Contribution: 2018-05-29 20:07
-
-Contribution: 2018-05-29 20:08
-
-Contribution: 2018-05-30 20:00
-
-Contribution: 2018-05-30 20:01
-
-Contribution: 2018-05-30 20:02
-
-Contribution: 2018-05-30 20:03
-
-Contribution: 2018-05-30 20:04
-
-Contribution: 2018-06-08 20:00
-
-Contribution: 2018-06-08 20:01
-
-Contribution: 2018-06-08 20:02
-
-Contribution: 2018-06-09 20:00
-
-Contribution: 2018-06-09 20:01
-
-Contribution: 2018-06-09 20:02
-
-Contribution: 2018-06-09 20:03
-
-Contribution: 2018-06-09 20:04
-
-Contribution: 2018-06-09 20:05
-
-Contribution: 2018-06-09 20:06
-
-Contribution: 2018-06-09 20:07
-
-Contribution: 2018-06-09 20:08
-
-Contribution: 2018-06-10 20:00
-
-Contribution: 2018-06-10 20:01
-
-Contribution: 2018-06-10 20:02
-
-Contribution: 2018-06-10 20:03
-
-Contribution: 2018-06-10 20:04
-
-Contribution: 2018-06-10 20:05
-
-Contribution: 2018-06-10 20:06
-
-Contribution: 2018-06-10 20:07
-
-Contribution: 2018-06-10 20:08
-
-Contribution: 2018-06-19 20:00
-
-Contribution: 2018-06-19 20:01
-
-Contribution: 2018-06-19 20:02
-
-Contribution: 2018-06-22 20:00
-
-Contribution: 2018-06-22 20:01
-
-Contribution: 2018-06-22 20:02
-
-Contribution: 2018-06-22 20:03
-
-Contribution: 2018-06-22 20:04
-
-Contribution: 2018-06-22 20:05
-
-Contribution: 2018-06-22 20:06
-
-Contribution: 2018-06-25 20:00
-
-Contribution: 2018-06-25 20:01
-
-Contribution: 2018-06-25 20:02
-
-Contribution: 2018-06-25 20:03
-
-Contribution: 2018-06-25 20:04
-
-Contribution: 2018-06-25 20:05
-
-Contribution: 2018-06-25 20:06
-
-Contribution: 2018-06-25 20:07
-
-Contribution: 2018-06-30 20:00
-
-Contribution: 2018-06-30 20:01
-
-Contribution: 2018-06-30 20:02
-
-Contribution: 2018-06-30 20:03
-
-Contribution: 2018-06-30 20:04
-
-Contribution: 2018-06-30 20:05
-
-Contribution: 2018-06-30 20:06
-
-Contribution: 2018-06-30 20:07
-
-Contribution: 2018-06-30 20:08
-
-Contribution: 2018-07-05 20:00
-
-Contribution: 2018-07-05 20:01
-
-Contribution: 2018-07-11 20:00
-
-Contribution: 2018-07-11 20:01
-
-Contribution: 2018-07-11 20:02
-
-Contribution: 2018-07-11 20:03
-
-Contribution: 2018-07-12 20:00
-
-Contribution: 2018-07-24 20:00
-
-Contribution: 2018-07-24 20:01
-
-Contribution: 2018-07-24 20:02
-
-Contribution: 2018-07-24 20:03
-
-Contribution: 2018-07-25 20:00
-
-Contribution: 2018-07-25 20:01
-
-Contribution: 2018-07-25 20:02
-
-Contribution: 2018-07-25 20:03
-
-Contribution: 2018-07-25 20:04
-
-Contribution: 2018-07-31 20:00
-
-Contribution: 2018-07-31 20:01
-
-Contribution: 2018-07-31 20:02
-
-Contribution: 2018-07-31 20:03
-
-Contribution: 2018-08-10 20:00
-
-Contribution: 2018-08-10 20:01
-
-Contribution: 2018-08-10 20:02
-
-Contribution: 2018-08-10 20:03
-
-Contribution: 2018-08-10 20:04
-
-Contribution: 2018-08-10 20:05
-
-Contribution: 2018-08-10 20:06
-
-Contribution: 2018-08-13 20:00
-
-Contribution: 2018-08-13 20:01
-
-Contribution: 2018-08-13 20:02
-
-Contribution: 2018-08-13 20:03
-
-Contribution: 2018-08-13 20:04
-
-Contribution: 2018-08-13 20:05
-
-Contribution: 2018-08-13 20:06
-
-Contribution: 2018-08-20 20:00
-
-Contribution: 2018-08-20 20:01
-
-Contribution: 2018-08-20 20:02
-
-Contribution: 2018-08-23 20:00
-
-Contribution: 2018-08-23 20:01
-
-Contribution: 2018-08-23 20:02
-
-Contribution: 2018-08-23 20:03
-
-Contribution: 2018-08-27 20:00
-
-Contribution: 2018-08-27 20:01
-
-Contribution: 2018-08-27 20:02
-
-Contribution: 2018-08-27 20:03
-
-Contribution: 2018-08-27 20:04
-
-Contribution: 2018-08-27 20:05
-
-Contribution: 2018-08-27 20:06
-
-Contribution: 2018-08-27 20:07
-
-Contribution: 2018-08-27 20:08
-
-Contribution: 2018-08-28 20:00
-
-Contribution: 2018-08-28 20:01
-
-Contribution: 2018-08-28 20:02
-
-Contribution: 2018-08-28 20:03
-
-Contribution: 2018-08-28 20:04
-
-Contribution: 2018-08-28 20:05
-
-Contribution: 2018-08-31 20:00
-
-Contribution: 2018-08-31 20:01
-
-Contribution: 2018-08-31 20:02
-
-Contribution: 2018-08-31 20:03
-
-Contribution: 2018-08-31 20:04
-
-Contribution: 2018-08-31 20:05
-
-Contribution: 2018-09-09 20:00
-
-Contribution: 2018-09-09 20:01
-
-Contribution: 2018-09-09 20:02
-
-Contribution: 2018-09-09 20:03
-
-Contribution: 2018-09-19 20:00
-
-Contribution: 2018-09-19 20:01
-
-Contribution: 2018-09-19 20:02
-
-Contribution: 2018-09-19 20:03
-
-Contribution: 2018-09-19 20:04
-
-Contribution: 2018-09-19 20:05
-
-Contribution: 2018-09-19 20:06
-
-Contribution: 2018-09-22 20:00
-
-Contribution: 2018-09-22 20:01
-
-Contribution: 2018-09-22 20:02
-
-Contribution: 2018-09-22 20:03
-
-Contribution: 2018-09-22 20:04
-
-Contribution: 2018-09-25 20:00
-
-Contribution: 2018-09-25 20:01
-
-Contribution: 2018-09-25 20:02
-
-Contribution: 2018-09-26 20:00
-
-Contribution: 2018-09-26 20:01
-
-Contribution: 2018-09-26 20:02
-
-Contribution: 2018-09-26 20:03
-
-Contribution: 2018-09-26 20:04
-
-Contribution: 2018-09-26 20:05
-
-Contribution: 2018-09-26 20:06
-
-Contribution: 2018-09-26 20:07
-
-Contribution: 2018-10-01 20:00
-
-Contribution: 2018-10-06 20:00
-
-Contribution: 2018-10-06 20:01
-
-Contribution: 2018-10-06 20:02
-
-Contribution: 2018-10-06 20:03
-
-Contribution: 2018-10-06 20:04
-
-Contribution: 2018-10-06 20:05
-
-Contribution: 2018-10-06 20:06
-
-Contribution: 2018-10-06 20:07
-
-Contribution: 2018-10-06 20:08
-
-Contribution: 2018-10-07 20:00
-
-Contribution: 2018-10-07 20:01
-
-Contribution: 2018-10-07 20:02
-
-Contribution: 2018-10-07 20:03
-
-Contribution: 2018-10-07 20:04
-
-Contribution: 2018-10-08 20:00
-
-Contribution: 2018-10-08 20:01
-
-Contribution: 2018-10-08 20:02
-
-Contribution: 2018-10-08 20:03
-
-Contribution: 2018-10-10 20:00
-
-Contribution: 2018-10-10 20:01
-
-Contribution: 2018-10-10 20:02
-
-Contribution: 2018-10-10 20:03
-
-Contribution: 2018-10-10 20:04
-
-Contribution: 2018-10-10 20:05
-
-Contribution: 2018-10-10 20:06
-
-Contribution: 2018-10-16 20:00
-
-Contribution: 2018-10-17 20:00
-
-Contribution: 2018-10-17 20:01
-
-Contribution: 2018-10-17 20:02
-
-Contribution: 2018-10-17 20:03
-
-Contribution: 2018-10-17 20:04
-
-Contribution: 2018-10-17 20:05
-
-Contribution: 2018-10-20 20:00
-
-Contribution: 2018-10-20 20:01
-
-Contribution: 2018-10-20 20:02
-
-Contribution: 2018-10-20 20:03
-
-Contribution: 2018-10-20 20:04
-
-Contribution: 2018-10-22 20:00
-
-Contribution: 2018-10-22 20:01
-
-Contribution: 2018-10-22 20:02
-
-Contribution: 2018-10-22 20:03
-
-Contribution: 2018-10-22 20:04
-
-Contribution: 2018-10-22 20:05
-
-Contribution: 2018-10-22 20:06
-
-Contribution: 2018-10-22 20:07
-
-Contribution: 2018-10-22 20:08
-
-Contribution: 2018-10-28 20:00
-
-Contribution: 2018-10-28 20:01
-
-Contribution: 2018-10-28 20:02
-
-Contribution: 2018-10-28 20:03
-
-Contribution: 2018-10-28 20:04
-
-Contribution: 2018-11-05 20:00
-
-Contribution: 2018-11-05 20:01
-
-Contribution: 2018-11-05 20:02
-
-Contribution: 2018-11-05 20:03
-
-Contribution: 2018-11-05 20:04
-
-Contribution: 2018-11-05 20:05
-
-Contribution: 2018-11-05 20:06
-
-Contribution: 2018-11-05 20:07
-
-Contribution: 2018-11-05 20:08
-
-Contribution: 2018-11-07 20:00
-
-Contribution: 2018-11-07 20:01
-
-Contribution: 2018-11-07 20:02
-
-Contribution: 2018-11-07 20:03
-
-Contribution: 2018-11-07 20:04
-
-Contribution: 2018-11-07 20:05
-
-Contribution: 2018-11-07 20:06
-
-Contribution: 2018-11-07 20:07
-
-Contribution: 2018-11-08 20:00
-
-Contribution: 2018-11-08 20:01
-
-Contribution: 2018-11-15 20:00
-
-Contribution: 2018-11-15 20:01
-
-Contribution: 2018-11-15 20:02
-
-Contribution: 2018-11-15 20:03
-
-Contribution: 2018-11-15 20:04
-
-Contribution: 2018-11-15 20:05
-
-Contribution: 2018-11-15 20:06
-
-Contribution: 2018-11-15 20:07
-
-Contribution: 2018-11-21 20:00
-
-Contribution: 2018-11-27 20:00
-
-Contribution: 2018-11-27 20:01
-
-Contribution: 2018-11-27 20:02
-
-Contribution: 2018-11-27 20:03
-
-Contribution: 2018-11-27 20:04
-
-Contribution: 2018-11-27 20:05
-
-Contribution: 2018-11-27 20:06
-
-Contribution: 2018-11-30 20:00
-
-Contribution: 2018-11-30 20:01
-
-Contribution: 2018-11-30 20:02
-
-Contribution: 2018-12-02 20:00
-
-Contribution: 2018-12-10 20:00
-
-Contribution: 2018-12-10 20:01
-
-Contribution: 2018-12-10 20:02
-
-Contribution: 2018-12-10 20:03
-
-Contribution: 2018-12-10 20:04
-
-Contribution: 2018-12-10 20:05
-
-Contribution: 2018-12-10 20:06
-
-Contribution: 2018-12-10 20:07
-
-Contribution: 2018-12-10 20:08
-
-Contribution: 2018-12-11 20:00
-
-Contribution: 2018-12-11 20:01
-
-Contribution: 2018-12-11 20:02
-
-Contribution: 2018-12-13 20:00
-
-Contribution: 2018-12-21 20:00
-
-Contribution: 2018-12-21 20:01
-
-Contribution: 2018-12-21 20:02
-
-Contribution: 2018-12-21 20:03
-
-Contribution: 2018-12-21 20:04
-
-Contribution: 2018-12-21 20:05
-
-Contribution: 2018-12-21 20:06
-
-Contribution: 2018-12-27 20:00
-
-Contribution: 2018-12-27 20:01
-
-Contribution: 2018-12-27 20:02
-
-Contribution: 2018-12-27 20:03
-
-Contribution: 2018-12-27 20:04
-
-Contribution: 2018-12-27 20:05
-
+```
+[Login/Register proshop  ](https://aliahmadshop.herokuapp.com/register?redirect=/)
